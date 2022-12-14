@@ -21,7 +21,11 @@ int main()
 
     }
     if(escolha == 1){
-            SimularConsorcio();//Mudar cores
+            SimularConsorcio();//Mudar cores */   fwrite(&A, sizeof(Dados), 1,fp);
+    if(opcoes==1){
+        A=Digitar();
+        fseek(fp,0,SEEK_END);
+        fwrite(&A, sizeof(Dados),1,fp);  */
             DigitarDados();
     }
     if(escolha == 2);
